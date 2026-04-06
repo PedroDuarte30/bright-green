@@ -203,7 +203,108 @@ nav.container {
   color: var(--primary);
 }
 
-/* --- Mobile / Tablet (Até 768px) --- */
+/*About section*/
+.about {
+  padding: 10rem 0;
+  background-color: var(--white);
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+}
+
+.about-image {
+  flex: 1;
+  position: relative;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+  z-index: 2;
+  position: relative;
+}
+
+.decoration-box {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 100px;
+  height: 100px;
+  background-color: var(--secondary);
+  z-index: 1;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content .subtitle {
+  color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.about-content h2 {
+  font-size: clamp(3rem, 4vw, 4.5rem);
+  color: var(--hover);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.about-content .description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 500px;
+}
+
+.btn-secondary {
+  display: inline-block;
+  margin-top: 3rem;
+  padding: 1.4rem 3.5rem;
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn-secondary:hover {
+  background-color: var(--hover);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: width 0.3s ease;
+}
+
+.btn-secondary:hover::after {
+  width: 100%;
+}
+
+/* --- Mobile / Tablet (Up 768px) --- */
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;
@@ -271,7 +372,26 @@ nav.container {
   header {
     width: 100%;
   }
+  .about-wrapper {
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+  }
+
+  .about-image {
+    width: 100%;
+    max-width: 400px; 
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .btn-secondary {
+    margin: 3rem auto 0;
+  }
 }
+/* PRÓXIMO PASSO: Criar a Grid de Produtos (Plants Catalog) */
 
 /* --- Desktop (769px ou mais) --- */
 @media (min-width: 769px) {
