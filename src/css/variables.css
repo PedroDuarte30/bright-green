@@ -1,0 +1,19 @@
+:root {
+  --primary: #1B4332;      
+  --secondary: #B7E4C7;     
+  --accent: #D4A373;        
+  --white: #F5F5F0;        
+  --text: #2D2D2D;          
+  --light-gray: #F8F9FA;
+  --hover: #79AE6F;
+  --menu: #9FCB98;   
+
+  /* Typography */
+    --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-size-base: 1.4rem;
+    --font-bold: 700;
+
+  /* z index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
