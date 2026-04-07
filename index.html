@@ -28,7 +28,9 @@
   <body>
     <header>
       <nav class="container">
-        <div class="logo">Bright<span>Green</span></div>
+        <div class="logo">
+          <a href="#hero">Bright<span>Green</span></a>
+        </div>
         <div class="menu-toggle" id="mobile-menu">
           <i class="ri-menu-5-line"></i>
         </div>
@@ -40,7 +42,7 @@
             <a href="#about"><i class="ri-info-card-line"></i> About</a>
           </li>
           <li>
-            <a href="#topics"><i class="ri-fire-line"></i> Topics</a>
+            <a href="#products"><i class="ri-leaf-line"></i> Products</a>
           </li>
           <li>
             <a href="#contact"><i class="ri-phone-line"></i> Contact</a>
@@ -57,11 +59,11 @@
             Hand picked indoor plants to improve your air quality and boost your
             productivity.
           </p>
-          <a href="#topics" class="btn-hero">View Catalog</a>
+          <a href="#products" class="btn-hero">View Catalog</a>
         </div>
       </section>
 
-      <section id="about" class="about container">
+      <section id="about" class="about section-padding">
         <div class="container about-wrapper">
           <div class="about-image">
             <img
@@ -79,51 +81,57 @@
               mission: to reconnect people with nature through high-quality,
               hand-picked indoor plants.
             </p>
-            <a href="#catalog" class="btn-secondary">Learn More</a>
+            <a href="#contact" class="btn-secondary">Learn More</a>
           </div>
         </div>
       </section>
 
-      <section id="topics" class="topics container">
-        <div class="section-header">
-          <h2>Our Best Sellers</h2>
-          <h3>Healthy plants for your home</h3>
-        </div>
-        <div class="topics-grid">
-          <div class="topics-card">
-            <i class="ri-plant-line"></i>
-            <h3>Monstera Deliciosa</h3>
-            <p>$35.00</p>
-            <img
-              src="assets/images/monstera-deliciosa.png"
-              alt="monstera deliciosa in a ceramic pot"
-            />
+      <section id="products" class="products section-padding">
+        <div class="container">
+          <div class="section-header-center">
+            <span class="subtitle">Our Collection</span>
+            <h2>Check our best sellers</h2>
           </div>
 
-          <div class="topics-card">
-            <i class="ri-plant-line"></i>
-            <h3>Fiddle Leaf Fig</h3>
-            <p>$22.00</p>
-            <img
-              src="assets/images/fiddle-leaf-fig.jpg"
-              alt="fiddle leaf fig in a ceramic pot"
-            />
-          </div>
+          <div class="product-grid">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="assets/images/monstera-deliciosa.png"
+                  alt="Monstera Deliciosa"
+                />
+                <div class="product-badge">New</div>
+                <button class="add-to-cart">
+                  <i class="ri-shopping-bag-line"></i>
+                </button>
+              </div>
 
-          <div class="topics-card">
-            <i class="ri-plant-line"></i>
-            <h3>Snake Plant</h3>
-            <p>$48.00</p>
-            <img
-              src="assets/images/snake-plant.jpg"
-              alt="snake plant in a ceramic pot"
-            />
+              <div class="product-info">
+                <h3>Monstera Deliciosa</h3>
+                <p class="product-category">Indoor Plant</p>
+                <span class="price">$25.00</span>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img src="assets/images/snake-plant.jpg" alt="Snake Plant" />
+                <button class="add-to-cart">
+                  <i class="ri-shopping-bag-line"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <h3>Snake Plant</h3>
+                <p class="product-category">Low Light</p>
+                <span class="price">$18.00</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer id="contact" class="main-footer">
-      <div class="footer-container">
+      <div class="footer-container container">
         <h2>Let's stay in touch</h2>
         <div class="contact-info">
           <p>
