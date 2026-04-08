@@ -561,6 +561,12 @@ nav.container {
     color: var(--secondary);
   }
 
+  .nav-links li {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none; /* Remove a animação de entrada no desktop */
+  }
+
   .hero-content {
     text-align: left;
     padding-left: 10%;
